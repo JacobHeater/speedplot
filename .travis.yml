@@ -1,0 +1,11 @@
+language: python
+python:
+  - "2.7"
+install:
+  - "pip install -r packages.txt"
+before_script:
+  - sleep 15
+scripts:
+  - cd scripts && python test.py
+services:
+  - mongodb
