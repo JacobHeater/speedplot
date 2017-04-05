@@ -1,11 +1,11 @@
 import require
-
-JsonHelper = require('../helpers/jsonhelper.py').JsonHelper
-
+from abc import ABCMeta, abstractmethod
 
 class BaseEntity(object):
-    def __init__(self):
-        object.__init__(self)
 
-    def toJson(self):
-        return JsonHelper.serialize(self)
+    __metaclass__ = ABCMeta
+
+    @abstractmethod
+    def writeToDb(self):
+        pass
+    
