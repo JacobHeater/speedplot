@@ -1,1 +1,0 @@
-cd tests && python -m unittest entitytests

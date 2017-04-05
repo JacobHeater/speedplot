@@ -1,13 +1,27 @@
 import unittest
 import require
-from bunch import bunchify
+from random import randint
 
 SpeedTestResult = require('../entities/speedtestresult.py').SpeedTestResult
-JsonHelper = require('../helpers/jsonhelper.py').JsonHelper
 
 class SpeedTestResultTest(unittest.TestCase):
-    def test_toJson(self):
+    def test_writeToDb(self):
         
+        result = SpeedTestResult()
+
+        generateSpeedInt = lambda: randint(50, 100)
+
+        result.uploadSpeed = generateSpeedInt()
+        result.downloadSpeed = generateSpeedInt()
+        result.speedUnits = 'Mb/s'
+        result.ipAddr = '127.0.0.1'
+
+        result_id = result.writeToDb()
+
+        self.assertIsNotNone(result_id)
+
+    def test_writeToDbStatic(self):
+
         result = SpeedTestResult()
 
         result.uploadSpeed = 100
@@ -15,12 +29,7 @@ class SpeedTestResultTest(unittest.TestCase):
         result.speedUnits = 'Mb/s'
         result.ipAddr = '127.0.0.1'
 
-        json = result.toJson()
-        obj = bunchify(JsonHelper.deserialize(json))
+        result_id = result.writeToDb()
 
-        self.assertEqual(result.uploadSpeed, obj.uploadSpeed)
-        self.assertEqual(result.downloadSpeed, obj.downloadSpeed)
-        self.assertEqual(result.speedUnits, obj.speedUnits)
-        self.assertEqual(result.ipAddr, obj.ipAddr)
-
+        self.assertIsNotNone(result_id)
         
