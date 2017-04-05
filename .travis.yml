@@ -6,6 +6,6 @@ install:
 before_script:
   - sleep 15
 script:
-  - cd scripts && python test.py
+  - python scripts/test.py
 services:
   - mongodb
