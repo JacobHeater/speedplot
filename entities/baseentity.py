@@ -1,4 +1,3 @@
-import require
 from abc import ABCMeta, abstractmethod
 
 class BaseEntity(object):

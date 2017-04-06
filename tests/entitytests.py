@@ -1,8 +1,6 @@
 import unittest
-import require
 from random import randint
-
-SpeedTestResult = require('../entities/speedtestresult.py').SpeedTestResult
+from entities.speedtestresult import SpeedTestResult
 
 class SpeedTestResultTest(unittest.TestCase):
     def test_writeToDb(self):

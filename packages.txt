@@ -1,5 +1,4 @@
 speedtest-cli
 flask
 pymongo
-py-require
 Bunch
