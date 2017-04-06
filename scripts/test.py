@@ -1,4 +1,7 @@
 import unittest
+import sys
+
+sys.path.append('./')
 
 loader = unittest.TestLoader()
 start_dir = './tests'

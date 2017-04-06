@@ -1,8 +1,6 @@
-import require
 from datetime import datetime
-
-BaseEntity = require('./baseentity.py').BaseEntity
-SpeedtestHelper = require('../helpers/speedtesthelper.py').SpeedtestHelper
+from entities.baseentity import BaseEntity
+from helpers.speedtesthelper import SpeedtestHelper
 
 class SpeedTestResult(BaseEntity):
     def __init__(self):

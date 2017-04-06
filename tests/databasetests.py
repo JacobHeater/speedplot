@@ -1,8 +1,8 @@
 import unittest
-import require
+import sys
 from bunch import bunchify
 
-SpeedtestHelper = require('../helpers/speedtesthelper.py').SpeedtestHelper
+from helpers.speedtesthelper import SpeedtestHelper
 
 class ReadTests(unittest.TestCase):
     def test_findOneByIpAddress(self):

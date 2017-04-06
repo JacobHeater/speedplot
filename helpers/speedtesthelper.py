@@ -1,6 +1,4 @@
-import require
-
-MongoHelper = require('./mongohelper.py').MongoHelper
+from helpers.mongohelper import MongoHelper
 
 class SpeedtestHelper(MongoHelper):
     def __init__(self):
