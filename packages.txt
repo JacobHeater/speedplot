@@ -2,3 +2,4 @@ speedtest-cli
 flask
 pymongo
 Bunch
+pyScss

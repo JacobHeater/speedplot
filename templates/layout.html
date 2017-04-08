@@ -7,15 +7,24 @@
     <title>Speedplot</title>
     <meta name="description" content="Speedplot is a visualization tool showing historical trends of your internet speed">
     <meta name="author" content="Jacob Heater">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="{{url_for('static', filename='bootstrap/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{url_for('static', filename='bootstrap/bootstrap-theme.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{url_for('static', filename='styles/speedplot.css')}}" rel="stylesheet" type="text/css">
 
   {% endblock %}
   {% block body %} 
+
+    {% include 'partials/header.html' %}
+
+    <div class="speedplot-body-content container">
+      {% block body_content %}
+      {% endblock %}
+    </div>
   
     <script src="{{url_for('static', filename='jquery-3.2.1.min.js')}}"></script>
-    <script src="{{url_for('static', filename='static/bootstrap.min.js')}}'"></script>
+    <script src="{{url_for('static', filename='bootstrap/bootstrap.min.js')}}"></script>
 
   {% endblock %}
 </html>
