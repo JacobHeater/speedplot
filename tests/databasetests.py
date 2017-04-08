@@ -29,3 +29,4 @@ class ReadTests(unittest.TestCase):
         speedtests = map(lambda r: bunchify(r), result_list)
 
         self.assertGreater(speedtests[0].downloadSpeed, actual_speed)
+    

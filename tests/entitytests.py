@@ -18,6 +18,8 @@ class SpeedTestResultTest(unittest.TestCase):
 
         self.assertIsNotNone(result_id)
 
+        return result_id
+
     def test_writeToDbStatic(self):
 
         result = SpeedTestResult()
@@ -31,3 +33,14 @@ class SpeedTestResultTest(unittest.TestCase):
 
         self.assertIsNotNone(result_id)
         
+
+    def test_write100Records(self):
+
+        recordCount = 100
+        result_ids = []
+
+        for i in range(0, recordCount):
+            result_ids.append(self.test_writeToDb())
+
+        
+        self.assertEqual(recordCount, len(result_ids))

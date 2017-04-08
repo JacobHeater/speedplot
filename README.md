@@ -3,6 +3,37 @@ A visualization tool that shows historical trends of your internet speeds.
 
 ## Setup
 
+### Prerequisites
+
+This is a Python application that leverages MongoDB. Therefore, you
+must have Python 2 and MongoDB installed to continue with the rest of
+the setup process. If you are not familiar with MongoDB, it would be
+a good idea to read some of the documentation first, if you intend on
+making any modifications to the code.
+
+[Get Python 2](https://www.python.org/downloads/)
+
+[Get MongoDB Community Edition](https://docs.mongodb.com/manual/administration/install-community/)
+
+### Next Steps
+
+**STOP!!!**
+
+**Please read the following notes!**
+
+When running commands in the command line, you must be run the
+commands from the root folder of the project. See the example
+below before running running the following steps.
+
+```sh
+cd C:/Projects/Python/speedplot
+```
+
+Now that I have changed my path to the project root, I can continue
+followign the steps below.
+
+---
+
 1. Clone the repository.
 1. From the command line run the following commands:
     1. `pip install -r packages.txt`
