@@ -17,23 +17,6 @@ making any modifications to the code.
 
 ### Next Steps
 
-**STOP!!!**
-
-**Please read the following notes!**
-
-When running commands in the command line, you must be run the
-commands from the root folder of the project. See the example
-below before running running the following steps.
-
-```sh
-cd C:/Projects/Python/speedplot
-```
-
-Now that I have changed my path to the project root, I can continue
-followign the steps below.
-
----
-
 1. Clone the repository.
 1. From the command line run the following commands:
     1. `pip install -r packages.txt`
@@ -56,6 +39,23 @@ MongoDB before running any of the test scripts.
     1. From the command line run `python scripts/test.py`
 
 ## Running Tests
+
+**STOP!!!**
+
+**Please read the following notes!**
+
+When running commands in the command line, you must be run the
+commands from the root folder of the project. See the example
+below before running the following steps.
+
+```sh
+cd C:/Projects/Python/speedplot
+```
+
+Now that I have changed my path to the project root, I can continue
+following the steps below.
+
+---
 
 You have the option to run all test cases conveniently using
 the `test.py` script in the `scripts` directory. That is useful
