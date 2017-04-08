@@ -1,16 +1,21 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  {% block head %}
+    <meta charset="utf-8">
 
-  <title>Speedplot</title>
-  <meta name="description" content="Speedplot is a visualization tool showing historical trends of your internet speed">
-  <meta name="author" content="Jacob Heater">
+    <title>Speedplot</title>
+    <meta name="description" content="Speedplot is a visualization tool showing historical trends of your internet speed">
+    <meta name="author" content="Jacob Heater">
 
-</head>
+    <link href="./static/bootstrap/bootsrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./static/bootstrap/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
 
-<body>
-    {% block body %} {% endblock %}
-</body>
+  {% endblock %}
+  {% block body %} 
+  
+    <script src="./static/jquery-3.2.1.min.js"></script>
+    <script src="./static/bootstrap.min.js"></script>
+
+  {% endblock %}
 </html>
