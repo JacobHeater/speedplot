@@ -14,3 +14,4 @@ class SpeedTestResult(BaseEntity):
     def writeToDb(self):
         db = SpeedtestHelper()
         return db.addSpeedTestResult(self)
+    

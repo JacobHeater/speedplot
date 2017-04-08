@@ -27,4 +27,5 @@ class SpeedtestHelper(MongoHelper):
     def lookupByDownloadSpeedGt(self, speed):
         return self.find({ "downloadSpeed": { "$gt": speed } })
 
-     
+    def deleteAll(self):
+        return self.speedtests.remove({})
