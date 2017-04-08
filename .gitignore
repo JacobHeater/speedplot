@@ -3,3 +3,4 @@ __pycache__
 **/*.pyc
 **/*.pyc@3-4
 **/*.pyc@2-7
+static/styles
