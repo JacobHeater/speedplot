@@ -8,14 +8,14 @@
     <meta name="description" content="Speedplot is a visualization tool showing historical trends of your internet speed">
     <meta name="author" content="Jacob Heater">
 
-    <link href="./static/bootstrap/bootsrap.min.css" rel="stylesheet" type="text/css">
-    <link href="./static/bootstrap/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="{{url_for('static', filename='bootstrap/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{url_for('static', filename='bootstrap/bootstrap-theme.min.css')}}" rel="stylesheet" type="text/css">
 
   {% endblock %}
   {% block body %} 
   
-    <script src="./static/jquery-3.2.1.min.js"></script>
-    <script src="./static/bootstrap.min.js"></script>
+    <script src="{{url_for('static', filename='jquery-3.2.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='static/bootstrap.min.js')}}'"></script>
 
   {% endblock %}
 </html>
