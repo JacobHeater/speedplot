@@ -1,4 +1,4 @@
-# speedplot
+# speedplot ![Travis CI Build Status](https://travis-ci.org/JacobHeater/speedplot.svg?branch=master)
 A visualization tool that shows historical trends of your internet speeds.
 
 ## Setup
